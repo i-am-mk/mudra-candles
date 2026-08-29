@@ -1,0 +1,15 @@
+LOGO
+====
+
+Right now the site shows a simple text logo ("MUDRA CANDLES" with a small
+flame icon) — you don't need to do anything for it to work.
+
+Whenever you have a real logo, save it as:
+
+  images/logo.png
+
+...and it will automatically replace the text logo in the header, footer
+and page-preview image. Nothing else needs to change.
+
+Tip: a roughly square logo, at least 200x200px, on a transparent or white
+background works best.

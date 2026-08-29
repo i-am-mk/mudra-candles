@@ -1,0 +1,15 @@
+PUT YOUR PHOTOS HERE
+====================
+
+Add JPG photos for the "daisy" candle here, named exactly like this:
+
+  daisy-1.jpg
+  daisy-2.jpg
+  daisy-3.jpg
+  daisy-4.jpg
+
+The website will pick these up automatically once the files exist here —
+you do not need to edit any code. See README.md > 'How to add images'.
+
+Want more than 4 photos for this candle? Open script.js, find the product
+with slug: "daisy", raise its imageCount, and add the matching numbered file.

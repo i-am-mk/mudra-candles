@@ -1,0 +1,13 @@
+PUT YOUR PHOTOS HERE
+====================
+
+Add JPG photos for the "teddy" candle here, named exactly like this:
+
+  teddy-1.jpg
+  teddy-2.jpg
+
+The website will pick these up automatically once the files exist here —
+you do not need to edit any code. See README.md > 'How to add images'.
+
+Want more than 2 photos for this candle? Open script.js, find the product
+with slug: "teddy", raise its imageCount, and add the matching numbered file.

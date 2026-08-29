@@ -1,0 +1,13 @@
+PUT YOUR PHOTOS HERE
+====================
+
+Add JPG photos for the "janmashtami" candle here, named exactly like this:
+
+  janmashtami-1.jpg
+  janmashtami-2.jpg
+
+The website will pick these up automatically once the files exist here —
+you do not need to edit any code. See README.md > 'How to add images'.
+
+Want more than 2 photos for this candle? Open script.js, find the product
+with slug: "janmashtami", raise its imageCount, and add the matching numbered file.

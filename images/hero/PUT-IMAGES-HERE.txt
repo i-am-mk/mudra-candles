@@ -1,0 +1,6 @@
+PUT YOUR PHOTOS HERE
+====================
+
+This folder is optional. The hero section currently uses a drawn candle
+illustration, so nothing needs to go here unless you later want to swap
+in a real photo (see README.md).

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mudra Candles | Customized, Decorative & Festival Candles in Mumbai</title>
+<meta name="description" content="Mudra Candles offers customized, decorative, scented and festival candles in Mumbai. Retail, corporate gifting and wholesale candles — enquire on WhatsApp for a quote.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Mudra Candles | Handcrafted Candles, Made to Make Moments Glow">
+<meta property="og:description" content="Customized, decorative, scented and festival candles for gifting, celebrations, corporate and wholesale orders. Based in Mumbai.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/logo.png">
+<!-- TODO once deployed: add og:url with your live domain -->
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<!-- Fonts: Fraunces (display), Work Sans (body), Space Mono (utility/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,450;1,9..144,600&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Defined early (not in script.js) so it is guaranteed to exist before any <img onerror> fires. -->
+<script>
+  function phFallback(img){
+    if(!img || !img.parentElement) return;
+    var wrap = img.parentElement;
+    wrap.classList.add('media--empty');
+    img.remove();
+    var span = document.createElement('span');
+    span.textContent = 'Photo coming soon';
+    var icon = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    icon.setAttribute('viewBox','0 0 24 24');
+    icon.innerHTML = '<path d="M4 16.5V6a2 2 0 0 1 2-2h9M4 16.5 8 12l3 3 4-5 5 5.5M20 8v9a2 2 0 0 1-2 2H6" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>';
+    wrap.appendChild(icon);
+    wrap.appendChild(span);
+  }
+  // Used by collection cards: hides the whole card when its image is missing,
+  // and reveals the single shared "Photo coming soon" card at the end of the grid.
+  function cardFallback(img){
+    var article = img && img.closest ? img.closest('article') : null;
+    if(article) article.hidden = true;
+    var cs = document.getElementById('collection-coming-soon');
+    if(cs) cs.hidden = false;
+  }
+</script>
+
+<!--
+  LocalBusiness structured data.
+  If you change the phone number or address, update it here AND in script.js (CONFIG object near the top)
+  so the two stay in sync.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Mudra Candles",
+  "image": "images/logo.png",
+  "telephone": "+919987240413",
+  "priceRange": "Contact for quote",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "20/H/206, Sangharsh Nagar, Chandivali, Powai, Andheri East",
+    "addressLocality": "Mumbai",
+    "postalCode": "400072",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "description": "Customized, decorative, scented and festival candles. Retail, corporate gifting and wholesale."
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- =================== HEADER / NAV =================== -->
+<header class="site-header" id="top">
+  <div class="wrap site-header__inner">
+    <a href="#top" class="brand" aria-label="Mudra Candles, back to top">
+      <img src="images/logo.png" alt="Mudra Candles" class="brand__logo-img" onerror="this.remove()" id="logo-img">
+      <span class="brand__wordmark">
+        <svg class="brand__flame" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1.8 3 3 4.6 3 7a3 3 0 1 1-6 0c0-1 .3-1.8.8-2.8C8.7 8 8 9.6 8 11.5 8 14.5 9.8 17 12 17s4-2.5 4-5.5c0-3.4-1.7-6-4-9.5Z"/></svg>
+        MUDRA CANDLES
+      </span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#customization">Customization</a></li>
+        <li><a href="#festival">Festival</a></li>
+        <li><a href="#corporate">Corporate</a></li>
+        <li><a href="#wholesale">Wholesale</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <a href="#contact" class="btn btn--primary btn--sm nav-cta">Get a Quote</a>
+      <button class="hamburger" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#customization">Customization</a></li>
+      <li><a href="#festival">Festival</a></li>
+      <li><a href="#corporate">Corporate</a></li>
+      <li><a href="#wholesale">Wholesale</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--primary btn--block">Get a Quote</a>
+    <a href="#" class="btn btn--outline btn--block js-wa" data-wa-msg="Hello Mudra Candles, I would like to enquire about your candles.">WhatsApp Us</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- =================== HERO =================== -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__copy reveal">
+        <p class="tag-label">Light &middot; Craft &middot; Celebration</p>
+        <h1 class="hero__headline">Handcrafted Candles, Made to Make Moments Glow.</h1>
+        <p class="hero__sub">Beautifully handcrafted candles for everyday moments, celebrations, gifting, festivals and special occasions.</p>
+        <div class="hero__ctas">
+          <a href="#collections" class="btn btn--primary">Explore Candles</a>
+          <a href="#customization" class="btn btn--outline">Customize Your Candle</a>
+          <a href="#" class="btn btn--ghost js-wa" data-wa-msg="Hello Mudra Candles, I would like to enquire about your candles.">WhatsApp Us</a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <svg class="hero__candle" viewBox="0 0 340 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a lit jar candle">
+          <ellipse class="candle-shadow" cx="170" cy="392" rx="92" ry="14"/>
+          <g class="candle-flicker">
+            <path class="flame-outer" d="M170 150c14 22 24 38 24 56a24 24 0 1 1-48 0c0-9 3-16 7-25-4 9-7 17-7 25 0 18 11 33 24 33s24-15 24-33c0-25-12-42-24-56Z"/>
+            <path class="flame-inner" d="M170 178c7 11 11 18 11 27a11 11 0 1 1-22 0c0-9 4-16 11-27Z"/>
+          </g>
+          <line class="wick" x1="170" y1="150" x2="170" y2="176"/>
+          <ellipse class="wax-top" cx="170" cy="176" rx="46" ry="9"/>
+          <rect class="jar" x="90" y="176" width="160" height="190" rx="14"/>
+          <rect class="jar-label" x="112" y="252" width="116" height="54" rx="3"/>
+          <line class="jar-label-line" x1="128" y1="270" x2="212" y2="270"/>
+          <line class="jar-label-line" x1="128" y1="284" x2="196" y2="284"/>
+          <rect class="jar-highlight" x="104" y="192" width="14" height="158" rx="7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">About Mudra Candles</p>
+        <h2>Made by Hand, Made With Heart</h2>
+      </div>
+
+      <div class="about__grid">
+        <p class="about__lead reveal">Mudra Candles creates handcrafted candles designed to add warmth, beauty and personality to every occasion. From delicate floral candles to festive creations and customized bulk orders, we bring together thoughtful design, beautiful colors and careful craftsmanship.</p>
+
+        <ul class="who-we-serve reveal" aria-label="Who we serve">
+          <li>Individual customers</li>
+          <li>Gift buyers</li>
+          <li>Event requirements</li>
+          <li>Corporate customers</li>
+          <li>Retail customers</li>
+          <li>Wholesale buyers</li>
+        </ul>
+      </div>
+
+      <ol class="story-strip reveal" aria-label="Our process, from craft to customer">
+        <li><span class="story-strip__word">Made by Hand</span></li>
+        <li><span class="story-strip__word">Made for Moments</span></li>
+        <li><span class="story-strip__word">Made for You</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- =================== PRODUCT SHOWCASE / COLLECTIONS =================== -->
+  <section class="section section--sand" id="collections">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">Browse</p>
+        <h2>Find Your Perfect Candle</h2>
+        <p class="section-head__sub">Every design can be made yours — choose a collection to see colors, combinations and customization options.</p>
+      </div>
+
+      <div class="collection-grid" id="collection-grid">
+        <!-- Collection cards are rendered below; kept as static HTML for search-engine visibility.
+             ADD NEW PRODUCT HERE: to add a brand-new collection card, copy one <article class="collection-card"> block
+             and update the data-modal-slug / data-wa-product / text and image path. -->
+
+        <article class="collection-card reveal" data-modal-slug="daisy">
+          <div class="media r-4-3">
+            <img src="images/daisy/daisy-01.jpg" alt="Daisy Candle collection" loading="lazy" onerror="cardFallback(this)">
+          </div>
+          <div class="collection-card__body">
+            <h3>Daisy Collection</h3>
+            <p>Bright, playful florals in a range of colors and combinations.</p>
+            <div class="collection-card__ctas">
+              <button type="button" class="btn btn--outline btn--sm js-open-modal" data-modal-slug="daisy">Explore Collection</button>
+              <a href="#" class="btn btn--text btn--sm js-wa" data-wa-product="Daisy Collection">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card reveal" data-modal-slug="bubble">
+          <div class="media r-4-3">
+            <img src="images/bubble/bubble-01.jpg" alt="Bubble Candle collection" loading="lazy" onerror="cardFallback(this)">
+          </div>
+          <div class="collection-card__body">
+            <h3>Bubble Collection</h3>
+            <p>Rounded, sculptural candles with a soft, contemporary look.</p>
+            <div class="collection-card__ctas">
+              <button type="button" class="btn btn--outline btn--sm js-open-modal" data-modal-slug="bubble">Explore Collection</button>
+              <a href="#" class="btn btn--text btn--sm js-wa" data-wa-product="Bubble Collection">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card reveal" data-modal-slug="tealight">
+          <div class="media r-4-3">
+            <img src="images/tealight/tealight-01.jpg" alt="Tealight Candle collection" loading="lazy" onerror="cardFallback(this)">
+          </div>
+          <div class="collection-card__body">
+            <h3>Tealight Collection</h3>
+            <p>Compact, versatile candles suited to everyday use and decor.</p>
+            <div class="collection-card__ctas">
+              <button type="button" class="btn btn--outline btn--sm js-open-modal" data-modal-slug="tealight">Explore Collection</button>
+              <a href="#" class="btn btn--text btn--sm js-wa" data-wa-product="Tealight Collection">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card reveal" data-modal-slug="glass">
+          <div class="media r-4-3">
+            <img src="images/glass/glass-01.jpg" alt="Glass Candle collection" loading="lazy" onerror="cardFallback(this)">
+          </div>
+          <div class="collection-card__body">
+            <h3>Glass Collection</h3>
+            <p>Candles set in glass, from petite votives to statement jars.</p>
+            <div class="collection-card__ctas">
+              <button type="button" class="btn btn--outline btn--sm js-open-modal" data-modal-slug="glass">Explore Collection</button>
+              <a href="#" class="btn btn--text btn--sm js-wa" data-wa-product="Glass Collection">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card reveal" data-scroll-target="#festival">
+          <div class="media r-4-3">
+            <img src="images/festival/festival-01.jpg" alt="Festival candle collection" loading="lazy" onerror="cardFallback(this)">
+          </div>
+          <div class="collection-card__body">
+            <h3>Festival Collection</h3>
+            <p>Modaks, laddoos, diyas and more for India's favourite celebrations.</p>
+            <div class="collection-card__ctas">
+              <a href="#festival" class="btn btn--outline btn--sm">Explore Collection</a>
+              <a href="#" class="btn btn--text btn--sm js-wa" data-wa-product="Festival Collection">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Single shared placeholder — hidden until at least one collection has no photo -->
+        <article class="collection-card reveal" id="collection-coming-soon" hidden>
+          <div class="media r-4-3 media--empty">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16.5V6a2 2 0 0 1 2-2h9M4 16.5 8 12l3 3 4-5 5 5.5M20 8v9a2 2 0 0 1-2 2H6" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Photo coming soon</span>
+          </div>
+          <div class="collection-card__body">
+            <h3>More Collections</h3>
+            <p>Photos and new collections coming soon — enquire on WhatsApp for the full range.</p>
+            <div class="collection-card__ctas">
+              <a href="#" class="btn btn--outline btn--sm js-wa" data-wa-msg="Hello Mudra Candles, I would like to know about your full range of candles.">Enquire on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== DAISY SPOTLIGHT =================== -->
+  <section class="section" id="daisy">
+    <div class="wrap">
+      <div class="daisy__layout">
+        <div class="daisy__copy reveal">
+          <p class="tag-label">Signature Collection</p>
+          <h2>Daisy Candles</h2>
+          <p>Bright, playful and beautiful — our Daisy candles can be customized in different colors and combinations.</p>
+          <ul class="chip-list" aria-label="What you can choose for Daisy candles">
+            <li class="chip">Colors</li>
+            <li class="chip">Combinations</li>
+            <li class="chip">Sizes</li>
+            <li class="chip">Individual candles</li>
+            <li class="chip">Sets</li>
+          </ul>
+          <a href="#" class="btn btn--primary js-wa" data-wa-product="Daisy Candle">Customize / Get a Quote</a>
+        </div>
+
+        <!-- ADD YOUR PRODUCT IMAGES HERE: this gallery is rendered automatically from the
+             PRODUCTS.daisy.images list in script.js. Add filenames there — no HTML edits needed. -->
+        <div class="daisy__gallery reveal" id="daisy-gallery"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CUSTOMIZATION =================== -->
+  <section class="section section--sand" id="customization">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">Made Your Way</p>
+        <h2>Made Your Way</h2>
+      </div>
+
+      <ul class="choice-grid reveal" aria-label="What you can customize">
+        <li><span class="choice-grid__icon" aria-hidden="true">&#127912;</span>Color</li>
+        <li><span class="choice-grid__icon" aria-hidden="true">&#128207;</span>Size</li>
+        <li><span class="choice-grid__icon" aria-hidden="true">&#127799;</span>Design</li>
+        <li><span class="choice-grid__icon" aria-hidden="true">&#127807;</span>Scent</li>
+        <li><span class="choice-grid__icon" aria-hidden="true">&#128367;</span>Scented / Unscented</li>
+        <li><span class="choice-grid__icon" aria-hidden="true">&#127873;</span>Combination</li>
+        <li><span class="choice-grid__icon" aria-hidden="true">&#128230;</span>Packaging</li>
+        <li><span class="choice-grid__icon" aria-hidden="true">&#128290;</span>Quantity</li>
+      </ul>
+
+      <p class="customization__note reveal">Have something specific in mind? Tell us what you need and we'll help you create the right candle combination for your occasion.</p>
+      <a href="#" class="btn btn--primary js-wa reveal" data-wa-msg="Hello Mudra Candles, I would like to customize a candle order. Here are my requirements:">Talk to Us on WhatsApp</a>
+
+      <div class="scent-cards reveal">
+        <div class="scent-card">
+          <h3>Scented</h3>
+          <p>For customers who want fragrance and an experience.</p>
+        </div>
+        <div class="scent-card">
+          <h3>Unscented</h3>
+          <p>Ideal for decorative use, events, gifting and customers who prefer fragrance-free candles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FESTIVAL COLLECTION =================== -->
+  <section class="section section--dark" id="festival">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label tag-label--light">Celebrate With Light</p>
+        <h2>Celebrate With Light</h2>
+        <p class="section-head__sub section-head__sub--light">From Diwali diyas to festive modaks, laddoos, Ganpati-inspired creations and more — discover candles made to celebrate India's most beautiful occasions.</p>
+      </div>
+
+      <!-- Festival grid is rendered by script.js — only images that exist in images/festival/ are shown.
+           To add more festival photos, drop them in images/festival/ as festival-05.jpg, festival-06.jpg … -->
+      <div class="festival-grid" id="festival-grid"></div>
+
+      <!-- Indian festivals list -->
+      <div class="festival-occasions reveal">
+        <p class="tag-label tag-label--light">We celebrate every festival</p>
+        <p class="festival-occasions__intro">Mudra Candles are crafted for every Indian festival and occasion — big or small, across every tradition.</p>
+        <ul class="festival-occasions__list">
+          <li>Diwali</li><li>Dussehra</li><li>Navratri</li><li>Ganesh Chaturthi</li>
+          <li>Janmashtami</li><li>Ram Navami</li><li>Holi</li><li>Maha Shivratri</li>
+          <li>Raksha Bandhan</li><li>Bhai Dooj</li><li>Karva Chauth</li><li>Teej</li>
+          <li>Dhanteras</li><li>Narak Chaturdashi</li><li>Chhath Puja</li><li>Dev Deepawali</li>
+          <li>Govardhan Puja</li><li>Tulsi Vivah</li><li>Annakut</li><li>Rath Yatra</li>
+          <li>Guru Purnima</li><li>Guru Nanak Jayanti</li><li>Buddha Purnima</li><li>Mahavir Jayanti</li>
+          <li>Onam</li><li>Vishu</li><li>Pongal</li><li>Makar Sankranti</li>
+          <li>Lohri</li><li>Baisakhi / Vaisakhi</li><li>Bihu</li><li>Ugadi</li>
+          <li>Gudi Padwa</li><li>Puthandu (Tamil New Year)</li><li>Durga Puja</li><li>Kali Puja</li>
+          <li>Saraswati Puja</li><li>Vasant Panchami</li><li>Dahi Handi</li><li>Akshaya Tritiya</li>
+          <li>Hanuman Jayanti</li><li>Eid ul-Fitr</li><li>Eid ul-Adha</li><li>Muharram</li>
+          <li>Milad un-Nabi</li><li>Christmas</li><li>Good Friday</li><li>Easter</li>
+          <li>Nababarsha (Bengali New Year)</li><li>Mahalaya</li><li>Ambedkar Jayanti</li>
+          <li>Hemis Festival</li><li>Thrissur Pooram</li><li>Hornbill Festival</li>
+          <li>Pushkar Fair</li><li>Valentine's Day</li><li>Mother's Day</li><li>Father's Day</li>
+          <li>Birthdays &amp; Anniversaries</li><li>Weddings &amp; Engagements</li><li>Baby Showers</li>
+        </ul>
+        <p class="festival-occasions__note">…and many more. If you have a festival or occasion in mind, reach out — we make candles for it.</p>
+      </div>
+
+      <div class="festival__ctas reveal">
+        <a href="#gallery" class="btn btn--primary" data-filter-jump="festival">Explore Festival Collection</a>
+        <a href="#" class="btn btn--outline btn--on-dark js-wa" data-wa-msg="Hello Mudra Candles, I am planning a festival order. Please share the available designs and bulk options.">Bulk Festival Orders</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== BULK / SEASONAL CTA BANNER =================== -->
+  <section class="banner">
+    <div class="wrap banner__inner reveal">
+      <div>
+        <h2>Planning a Festival or Corporate Order?</h2>
+        <p>Whether you need candles for gifting, events, festive hampers or large-scale requirements, talk to us about customized quantities and combinations.</p>
+      </div>
+      <div class="banner__ctas">
+        <a href="#" class="btn btn--primary js-wa" data-wa-msg="Hello Mudra Candles, I would like a bulk quote. Here are my requirements:">Get Bulk Quote</a>
+        <a href="#" class="btn btn--outline js-wa" data-wa-msg="Hello Mudra Candles, I would like to enquire about your candles.">WhatsApp Mudra Candles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CORPORATE =================== -->
+  <section class="section" id="corporate">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="tag-label">Corporate Gifting</p>
+        <h2>Corporate Gifting, Made Personal</h2>
+        <p>Looking for a meaningful way to reconnect with clients, employees and partners? Place a bulk order for <strong>Diwali</strong>, every festival, or any occasion throughout the year — handcrafted candles that leave a lasting impression and keep your brand memorable.</p>
+        <p>Whether it's a hamper for Diwali, a token of appreciation after every festival, or a gesture to reconnect — Mudra Candles are designed to make that moment feel personal and special.</p>
+        <ul class="tick-list">
+          <li>Bulk orders for Diwali</li>
+          <li>Festival gifting — every occasion</li>
+          <li>Reconnect with clients &amp; partners</li>
+          <li>Employee appreciation gifts</li>
+          <li>Festive hampers &amp; packaging</li>
+          <li>Event giveaways</li>
+          <li>Brand events &amp; launches</li>
+          <li>Custom bulk orders — any quantity</li>
+        </ul>
+        <a href="#" class="btn btn--primary js-wa" data-wa-msg="Hello Mudra Candles, I am reaching out regarding a corporate order. Please share the available designs, customization options and quotation.">Enquire for Corporate Orders</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== WHOLESALE + RETAIL =================== -->
+  <section class="section section--sand" id="wholesale">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">Retail &amp; Wholesale</p>
+        <h2>However Much You Need</h2>
+      </div>
+      <div class="retail-wholesale reveal">
+        <div class="rw-card">
+          <h3>Retail</h3>
+          <p>Looking for candles for your home, celebration or gifting?</p>
+          <a href="#" class="btn btn--outline js-wa" data-wa-msg="Hello Mudra Candles, I would like to enquire about your candles.">Shop / Enquire</a>
+        </div>
+        <div class="rw-card rw-card--accent">
+          <h3>Wholesale</h3>
+          <p>Need larger quantities for your store, business, events or gifting?</p>
+          <a href="#" class="btn btn--primary js-wa" data-wa-msg="Hello Mudra Candles, I would like a wholesale quote. Please share your wholesale catalogue and minimum order details.">Request Wholesale Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== HOW IT WORKS =================== -->
+  <section class="section" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">The Process</p>
+        <h2>How It Works</h2>
+      </div>
+      <ol class="steps reveal">
+        <li><span class="steps__num">01</span><h3>Choose</h3><p>Browse our candle designs.</p></li>
+        <li><span class="steps__num">02</span><h3>Customize</h3><p>Select color, size, scent and combination.</p></li>
+        <li><span class="steps__num">03</span><h3>Tell Us Your Quantity</h3><p>Retail, bulk or wholesale — tell us what you need.</p></li>
+        <li><span class="steps__num">04</span><h3>Get Your Quote</h3><p>We'll discuss your requirements and share the quotation.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- =================== GIFTING =================== -->
+  <section class="section section--sand" id="gifting">
+    <div class="wrap gifting__layout">
+      <div class="reveal">
+        <p class="tag-label">Gifting</p>
+        <h2>A Little Light Goes a Long Way.</h2>
+        <p>A Mudra Candle makes a beautiful and thoughtful gift for every occasion — give it as a <strong>birthday gift</strong>, a <strong>return gift</strong>, or a <strong>festival gift</strong> for family, friends and loved ones. Handcrafted, meaningful and always memorable.</p>
+        <ul class="chip-list">
+          <li class="chip">Birthday gift</li>
+          <li class="chip">Return gift</li>
+          <li class="chip">Festival gift</li>
+          <li class="chip">Weddings</li>
+          <li class="chip">Baby showers</li>
+          <li class="chip">Housewarming</li>
+          <li class="chip">Corporate gifting</li>
+          <li class="chip">Events</li>
+          <li class="chip">Special occasions</li>
+        </ul>
+        <a href="#" class="btn btn--primary js-wa" data-wa-msg="Hello Mudra Candles, I would like to create a custom gift order. Here are my requirements:">Create a Custom Gift Order</a>
+      </div>
+      <div class="media r-3-4 reveal">
+        <img src="images/daisy/daisy-03.jpg" alt="Gift-ready candles" loading="lazy" onerror="phFallback(this)">
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== GALLERY =================== -->
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">A Closer Look</p>
+        <h2>The Mudra Gallery</h2>
+      </div>
+
+      <div class="gallery-filters reveal" id="gallery-filters" role="group" aria-label="Filter gallery by category">
+        <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="daisy">Daisy</button>
+        <button type="button" class="filter-btn" data-filter="decorative">Decorative</button>
+        <button type="button" class="filter-btn" data-filter="glass">Glass</button>
+        <button type="button" class="filter-btn" data-filter="festival">Festival</button>
+      </div>
+
+      <!-- Rendered automatically from PRODUCTS in script.js -->
+      <div class="gallery-grid reveal" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- =================== TESTIMONIALS (hidden until real reviews are added — see script.js SHOW_TESTIMONIALS) =================== -->
+  <section class="section section--sand" id="testimonials" hidden>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">Customer Love</p>
+        <h2>What Customers Say</h2>
+      </div>
+      <div class="testimonials-grid reveal">
+        <!-- PLACEHOLDER — replace with a real customer testimonial before publishing -->
+        <blockquote class="testimonial-card">
+          <p>[PLACEHOLDER — replace with a real customer quote]</p>
+          <cite>— Customer name, Location</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>[PLACEHOLDER — replace with a real customer quote]</p>
+          <cite>— Customer name, Location</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>[PLACEHOLDER — replace with a real customer quote]</p>
+          <cite>— Customer name, Location</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SOCIAL / INSTAGRAM =================== -->
+  <section class="section" id="social">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">Follow Along</p>
+        <h2>See What We're Creating</h2>
+      </div>
+      <div class="social-placeholder reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="social-placeholder__icon"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.4" cy="6.6" r="1.1"/></svg>
+        <p>Our Instagram is coming soon — check back for updates.</p>
+        <!-- HOW TO ADD INSTAGRAM LATER: replace this whole .social-placeholder block with
+             an <a> link to your profile (e.g. https://instagram.com/yourhandle), or paste an
+             embed snippet from Instagram/Meta once your account is ready. See README.md. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FAQ =================== -->
+  <section class="section section--sand" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="tag-label">Good to Know</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>Do you take customized orders?</summary>
+          <p>Yes. Customers can discuss colors, sizes, designs, combinations and other requirements with us.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer scented candles?</summary>
+          <p>Yes. Scented and unscented options are available depending on the candle/design.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you accept wholesale orders?</summary>
+          <p>Yes. We accept wholesale and bulk requirements.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you take corporate orders?</summary>
+          <p>Yes. We accept corporate gifting and bulk requirements.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I choose candle colors?</summary>
+          <p>Yes. Color customization is available for suitable designs.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you have festival candles?</summary>
+          <p>Yes. We create candles for occasions such as Diwali, Ganpati and Janmashtami, along with other festive designs.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you have fixed prices?</summary>
+          <p>Pricing depends on quantity, combination, customization, size, scent and packaging. Contact us for a quotation.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is the minimum order for wholesale?</summary>
+          <p>Minimum quantities can vary by design and season — message us on WhatsApp with your requirement and we'll share the options available.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Where are you located?</summary>
+          <p>20/H/206, Sangharsh Nagar, Chandivali, Powai, Andheri East, Mumbai - 400072, Maharashtra, India.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section class="section" id="contact">
+    <div class="wrap contact__layout">
+      <div class="reveal">
+        <p class="tag-label">Visit Us / Get in Touch</p>
+        <h2>Mudra Candles</h2>
+
+        <ul class="contact-details">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.6 3.1 4.1 5.6 7.2 7.2l2.4-2.4c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.7.6.6 0 1 .4 1 1v3.6c0 .6-.4 1-1 1C10.6 21.5 2.5 13.4 2.5 3c0-.6.4-1 1-1H7c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.3 1.1L6.6 10.8Z"/></svg>
+            <a class="js-tel" href="tel:+919987240413">9987240413</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7.4 7-12.5A7 7 0 0 0 5 9.5C5 14.6 12 22 12 22Zm0-9.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
+            <span class="js-address">20/H/206, Sangharsh Nagar, Chandivali, Powai, Andheri East, Mumbai - 400072, Maharashtra, India</span>
+          </li>
+        </ul>
+
+        <div class="contact__ctas">
+          <a href="tel:+919987240413" class="btn btn--outline">Call Us</a>
+          <a href="#" class="btn btn--primary js-wa" data-wa-msg="Hello Mudra Candles, I would like to enquire about your candles.">WhatsApp Us</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=20%2FH%2F206%2C%20Sangharsh%20Nagar%2C%20Chandivali%2C%20Powai%2C%20Andheri%20East%2C%20Mumbai%20-%20400072" target="_blank" rel="noopener" class="btn btn--outline js-directions">Get Directions</a>
+        </div>
+      </div>
+
+      <form class="inquiry-form reveal" id="inquiry-form" novalidate>
+        <h3>Send an Inquiry</h3>
+        <div class="form-row">
+          <label for="f-name">Name</label>
+          <input type="text" id="f-name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="f-phone">Phone Number</label>
+          <input type="tel" id="f-phone" name="phone" required autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="f-email">Email (optional)</label>
+          <input type="email" id="f-email" name="email" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="f-product">What are you looking for?</label>
+          <select id="f-product" name="product">
+            <option value="">Select an option</option>
+            <option>Daisy Candle</option>
+            <option>Bubble Candle</option>
+            <option>Tealight Candle</option>
+            <option>Glass Candle</option>
+            <option>Festival Candles</option>
+            <option>Corporate Order</option>
+            <option>Wholesale Order</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="f-qty">Quantity</label>
+          <input type="text" id="f-qty" name="quantity" placeholder="e.g. 10, or approximate range">
+        </div>
+        <div class="form-row">
+          <span class="form-row__legend">Scented / Unscented</span>
+          <div class="radio-group">
+            <label><input type="radio" name="scent" value="Scented"> Scented</label>
+            <label><input type="radio" name="scent" value="Unscented"> Unscented</label>
+            <label><input type="radio" name="scent" value="No preference" checked> No preference</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="f-color">Preferred Color</label>
+          <input type="text" id="f-color" name="color">
+        </div>
+        <div class="form-row">
+          <label for="f-occasion">Occasion</label>
+          <input type="text" id="f-occasion" name="occasion" placeholder="e.g. Diwali, wedding, corporate gifting">
+        </div>
+        <div class="form-row">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Send Inquiry</button>
+        <p class="form-note">This opens WhatsApp with your details filled in — nothing is stored on this website.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- =================== FOOTER =================== -->
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <span class="brand__wordmark brand__wordmark--footer">
+        <svg class="brand__flame" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1.8 3 3 4.6 3 7a3 3 0 1 1-6 0c0-1 .3-1.8.8-2.8C8.7 8 8 9.6 8 11.5 8 14.5 9.8 17 12 17s4-2.5 4-5.5c0-3.4-1.7-6-4-9.5Z"/></svg>
+        MUDRA CANDLES
+      </span>
+      <p>Handcrafted candles for everyday moments, celebrations, gifting and special occasions.</p>
+    </div>
+
+    <nav class="footer__links" aria-label="Footer">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#customization">Customization</a></li>
+        <li><a href="#festival">Festival</a></li>
+        <li><a href="#corporate">Corporate</a></li>
+        <li><a href="#wholesale">Wholesale</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__contact">
+      <h3>Contact</h3>
+      <p><a class="js-tel" href="tel:+919987240413">9987240413</a></p>
+      <p class="js-address">20/H/206, Sangharsh Nagar, Chandivali, Powai, Andheri East, Mumbai - 400072, Maharashtra, India</p>
+      <a href="#" class="btn btn--outline btn--on-dark btn--sm js-wa" data-wa-msg="Hello Mudra Candles, I would like to enquire about your candles.">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="wrap footer__bottom">
+    <p>&copy; 2026 Mudra Candles. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="#" class="fab-wa js-wa" data-wa-msg="Hello Mudra Candles, I would like to enquire about your candles." aria-label="Chat with Mudra Candles on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.6c0 2.6.8 5 2.1 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.6C28.7 8.7 23 3 16 3Zm0 22.9c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1.3 1.3-3.8-.3-.4a10.2 10.2 0 0 1-1.6-5.5C5.5 9.9 10.1 5.3 16 5.3S26.5 9.9 26.5 15.7 21.9 25.9 16 25.9Zm5.8-7.7c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.3-.7.1-.4-.2-1.5-.6-2.5-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.4 0-.6.2-.7l.6-.7c.2-.2.2-.4.1-.6-.1-.2-.7-1.6-.9-2.1-.2-.5-.4-.4-.6-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 1.9 3 4.7 4.1 2.7 1.1 2.7.7 3.2.7.5 0 1.6-.6 1.8-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.4Z"/></svg>
+</a>
+
+<!-- Sticky mobile action bar -->
+<div class="mobile-bar" role="navigation" aria-label="Quick actions">
+  <a href="tel:+919987240413" class="mobile-bar__item">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.6 3.1 4.1 5.6 7.2 7.2l2.4-2.4c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.7.6.6 0 1 .4 1 1v3.6c0 .6-.4 1-1 1C10.6 21.5 2.5 13.4 2.5 3c0-.6.4-1 1-1H7c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.3 1.1L6.6 10.8Z"/></svg>
+    Call
+  </a>
+  <a href="#" class="mobile-bar__item mobile-bar__item--accent js-wa" data-wa-msg="Hello Mudra Candles, I would like to enquire about your candles.">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.6c0 2.6.8 5 2.1 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.6C28.7 8.7 23 3 16 3Z"/></svg>
+    WhatsApp
+  </a>
+  <a href="#contact" class="mobile-bar__item">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H7l-3 3V4Z"/></svg>
+    Get Quote
+  </a>
+</div>
+
+<!-- Product detail modal -->
+<dialog class="modal" id="product-modal" aria-labelledby="modal-title">
+  <button type="button" class="modal__close" id="modal-close-btn" aria-label="Close">&times;</button>
+  <div class="modal__body" id="modal-body"><!-- populated by script.js --></div>
+</dialog>
+
+<!-- Gallery lightbox -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close image viewer">&times;</button>
+  <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+  <figure class="lightbox__figure">
+    <img id="lightbox-image" src="" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+  <button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
